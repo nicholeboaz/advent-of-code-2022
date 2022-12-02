@@ -2263,6 +2263,7 @@ const sortedCaloriesArr = [...caloriesArr].sort((a, b) => b - a)
 const answer1 = sortedCaloriesArr[0]
 
 console.log(answer1)
+// Answer: 71300
 
 // Part Two
 
@@ -2271,3 +2272,4 @@ const answer2 = sortedCaloriesArr
     .reduce((a, b) => a + b)
     
 console.log(answer2)
+// Answer: 209691
