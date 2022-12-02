@@ -1,4 +1,4 @@
-const calories = 
+export const INPUT = 
 `9609
 7601
 7142
@@ -2249,27 +2249,3 @@ const calories =
 2763
 2781
 11806`
-
-// Part One
-
-const caloriesArr = calories
-    .split(/\n\n/g)
-    .map(list => list.split(/\n/g))
-    .map(list => list.map(num => parseInt(num, 10)))
-    .map(list => list.reduce((a, b) => a + b))
-
-const sortedCaloriesArr = [...caloriesArr].sort((a, b) => b - a)
-
-const answer1 = sortedCaloriesArr[0]
-
-console.log(answer1)
-// Answer: 71300
-
-// Part Two
-
-const answer2 = sortedCaloriesArr
-    .slice(0, 3)
-    .reduce((a, b) => a + b)
-    
-console.log(answer2)
-// Answer: 209691
